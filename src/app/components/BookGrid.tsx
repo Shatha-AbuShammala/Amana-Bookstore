@@ -78,30 +78,22 @@ const BookGrid: React.FC<BookGridProps> = ({ books, onAddToCart }) => {
 
       switch (sortBy) {
         case 'title':
-          comparison = a.title.localeCompare(b.title);
-          break;
+          comparison = a.title.localeCompare(b.title);break;
         case 'author':
-          comparison = a.author.localeCompare(b.author);
-          break;
+          comparison = a.author.localeCompare(b.author);break;
         case 'datePublished':
-          comparison = new Date(a.datePublished).getTime() - new Date(b.datePublished).getTime();
-          break;
+          comparison = new Date(a.datePublished).getTime() - new Date(b.datePublished).getTime(); break;
         case 'rating':
-          comparison = a.rating - b.rating;
-          break;
+          comparison = a.rating - b.rating;break;
         case 'reviewCount':
-          comparison = a.reviewCount - b.reviewCount;
-          break;
+          comparison = a.reviewCount - b.reviewCount; break;
         case 'price':
-          comparison = a.price - b.price;
-          break;
+          comparison = a.price - b.price; break;
         default:
           comparison = 0;
       }
-
       return sortOrder === 'asc' ? comparison : -comparison;
     });
-
     return sorted;
   }, [books, searchQuery, selectedGenre, sortBy, sortOrder]);
 
