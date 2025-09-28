@@ -181,4 +181,3 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
 };
 
 export default BookCard;
-
