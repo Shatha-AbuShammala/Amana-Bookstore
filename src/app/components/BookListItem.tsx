@@ -82,7 +82,7 @@ const BookListItem: React.FC<BookListItemProps> = ({ book, onAddToCart }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+    <div className="rounded-lg shadow-sm border border-blue-100 hover:border-blue-200 transition-shadow duration-200 bg-gradient-to-r from-white to-blue-50/30">
       <div className="flex items-center p-4 gap-4">
       {/* Book Cover/Icon - Left Side */}
 <Link href={`/book/${book.id}`} className="flex-shrink-0 cursor-pointer">
@@ -126,7 +126,7 @@ const BookListItem: React.FC<BookListItemProps> = ({ book, onAddToCart }) => {
                 {book.genre.slice(0, 3).map((genre) => (
                   <span 
                     key={genre} 
-                    className="inline-block bg-gray-100 rounded-full px-2 py-1 text-xs font-medium text-gray-700"
+                    className="inline-block bg-blue-50 rounded-full px-2 py-1 text-xs font-medium text-blue-700"
                   >
                     {genre}
                   </span>
@@ -149,7 +149,7 @@ const BookListItem: React.FC<BookListItemProps> = ({ book, onAddToCart }) => {
             {/* Price and Actions */}
             <div className="flex flex-col items-end gap-3">
               <div className="text-right">
-                <p className="text-xl font-bold text-gray-900">${book.price.toFixed(2)}</p>
+                <p className="text-xl font-bold text-blue-800">${book.price.toFixed(2)}</p>
                 {book.featured && (
                   <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full mt-1">
                     Featured
