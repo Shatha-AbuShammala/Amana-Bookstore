@@ -165,7 +165,7 @@ export const books: Book[] = [
     author: 'Prof. Samir Al-Razi',
     description: 'Modern molecular biology techniques, DNA technology, protein synthesis, and applications in biotechnology and medicine.',
     price: 118.90,
-    image: 'https://lh3.googleusercontent.com/proxy/0wt1h0Te56mSC6GClc6kazdrS72Wi8jdQeTY2UFd8oHQn-LA3Pgnv_MWEGO0U95bHrBt9m_kXLPsLqjY2H9bMV8fVyKd60mYuW7RR5TrDZTi2hl5rlfguoxgLSH-XYH1Gd1zeVchnLUTYGYNrqWto6tH0b5HxYOt',
+    image: 'https://m.media-amazon.com/images/I/71CASNRoR-L._UF1000,1000_QL80_.jpg',
     isbn: '978-0901234567',
     genre: ['Biology', 'Molecular Biology'],
     tags: ['Molecular Biology', 'Genetics', 'Biotechnology'],
@@ -874,5 +874,26 @@ export const books: Book[] = [
     reviewCount: 16,
     inStock: true,
     featured: true,
-  }
+  },
+  // additional new book 
+ {
+  id: '46',
+  title: 'Introduction to Astrophysics',
+  author: 'Dr. Layla Al-Masri',
+  description: 'A beginner-friendly guide to astrophysics, covering stars, galaxies, cosmology, and observational techniques.',
+  price: 99.99,
+  image: 'https://m.media-amazon.com/images/I/71VnJFclZGL._UF1000,1000_QL80_.jpg',
+  isbn: '978-0345678901',
+  genre: ['Physics', 'Astrophysics'],
+  tags: ['Space', 'Stars', 'Cosmology'],
+  datePublished: '2024-07-01',
+  pages: 412,
+  language: 'English',
+  publisher: 'Galileo Science Press',
+  rating: 4.7,
+  reviewCount: 12,
+  inStock: true,
+  featured: true,
+}
+
 ];
